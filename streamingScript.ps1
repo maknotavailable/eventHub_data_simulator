@@ -80,7 +80,7 @@ function Send-AzureEHDatagram {
 # Function written by Marcel Meurer: https://www.powershellgallery.com/packages/Azure.EventHub/0.9.0
 
 ## EVENT HUB ACCOUNT DETAILS
-$URI = "<eventhub>.servicebus.windows.net/<name>"
+$URI = "<service bus>.servicebus.windows.net/<event hub name>"
 $SASToken = Get-AzureEHSASToken -URI $URI -AccessPolicyName "<policy name>" -AccessPolicyKey "<access key>"
 
 ## LOAD DATA FILE
